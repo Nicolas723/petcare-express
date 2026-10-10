@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="PetCare Express – Sistema de gestión de citas, planes y tratamientos para clínicas veterinarias. Demostración académica.">
+  <title>PetCare Express</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">🐾 <b>PetCare Express</b></div>
+    <div class="who">
+      <label style="color:inherit;flex-direction:row;align-items:center">
+        Ver como&nbsp;
+        <select id="rol" data-c="rol">
+          <option value="admin">Administrador</option>
+          <option value="dueno">Dueño de mascota</option>
+          <option value="personal">Personal de servicio</option>
+        </select>
+      </label>
+      <span id="usrw"></span>
+      <button class="sm" data-a="reset" title="Restablecer datos de demostración">Restablecer demo</button>
+    </div>
+  </header>
+
+  <nav id="tabs"></nav>
+  <main id="view"></main>
+
+  <footer>
+    Demostración académica · datos ficticios guardados en su navegador · autenticación simulada por selección de perfil
+  </footer>
+
+  <dialog id="dlg"></dialog>
+  <div id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
